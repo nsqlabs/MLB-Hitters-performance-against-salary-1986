@@ -1,7 +1,7 @@
 ![Can a single statistic predict MLB 1987 hitters salary](https://user-images.githubusercontent.com/90852678/170703197-d85c4c3b-dea2-4173-8ca5-2ed72447ad7a.png)
 # Predicting MLB hitters salary in 1987 using 1986 performance statistics.
 
-![](https://img.shields.io/badge/Status-Improving-green?style=for-the-badge)
+![](https://img.shields.io/badge/Status-Improving-orange?style=for-the-badge)
 ![](https://img.shields.io/badge/Complexity-Low-blue?style=for-the-badge)
 ![](https://img.shields.io/badge/Hypothesis-Rejected-red?style=for-the-badge)
 [![GitHub issues](https://img.shields.io/github/issues/nsqlabs/MLB-Hitters-performance-against-salary-1986?style=for-the-badge)](https://github.com/nsqlabs/MLB-Hitters-performance-against-salary-1986/issues)
@@ -147,3 +147,4 @@ The same was downloaded from kaggle and provided with this repo for accesibility
 ![Not in a reliable way](https://user-images.githubusercontent.com/90852678/170711536-cfcd5fc4-6562-4e9b-9e84-31c4963ce1a3.gif)
 
 One single predictor is not enough as I showed in the notebook (explaining only as much as 30% of variation in data) so is obvious that a multiple linear regression is necessary and that maybe Career Runs will be an important predictor.  
+Maybe this is because data lack of context like team, age, etc so It ends up giving much more weight to players who already have a solid career with much more runs or because there are teams that can afford these more expensive contracts. These are only hypothesis so I will test them further with a multiple linear regression in other project
