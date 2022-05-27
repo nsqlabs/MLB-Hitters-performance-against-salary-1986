@@ -1,8 +1,9 @@
 ![Can a single statistic predict MLB 1987 hitters salary](https://user-images.githubusercontent.com/90852678/170703197-d85c4c3b-dea2-4173-8ca5-2ed72447ad7a.png)
 # Predicting MLB hitters salary in 1987 using 1986 performance statistics.
 
-![](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
+![](https://img.shields.io/badge/Status-Improving-green?style=for-the-badge)
 ![](https://img.shields.io/badge/Complexity-Low-blue?style=for-the-badge)
+![](https://img.shields.io/badge/Hypothesis-Rejected-red?style=for-the-badge)
 [![GitHub issues](https://img.shields.io/github/issues/nsqlabs/MLB-Hitters-performance-against-salary-1986?style=for-the-badge)](https://github.com/nsqlabs/MLB-Hitters-performance-against-salary-1986/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/nsqlabs/MLB-Hitters-performance-against-salary-1986?style=for-the-badge)](https://github.com/nsqlabs/MLB-Hitters-performance-against-salary-1986/stars)
 [![GitHub Stars](https://img.shields.io/github/last-commit/nsqlabs/MLB-Hitters-performance-against-salary-1986?style=for-the-badge)](https://github.com/nsqlabs/MLB-Hitters-performance-against-salary-1986/last-commit)
@@ -17,14 +18,40 @@ I asked myself these questions when exploring this dataset. Previous to the "mon
 
 - [Project Title](#predicting-mlb-hitters-salary-in-1987-using-1986-performance-statistics)
 - [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
 - [Defining the problem](#some-definitions-before-starting)
     - [A. What is the problem to solve?](#a-what-is-the-problem-to-solve)
     - [B. Why am I solving this problem?](#b-why-does-this-problem-needs-to-be-solved)
     - [C. How would I solve the problem?](#c-how-would-i-solve-the-problem)
     - [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Conclusion](#conclusion)
+
+# Installation
+[Back to top](#table-of-contents)
+
+> I'm asumming you already have installed python and pip. If not check this [tutorial](https://pip.pypa.io/en/stable/installation/)
+
+1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. The following command will install the packages according to the configuration file requirements.txt: `pip install -r requirements.txt`
+
+## Technologies used
+
+- `jupyter`
+- `matplotlib`
+- `numpy`
+- `pandas`
+- `pandas-profilling`
+- `seaborn`
+- `scikit-learn`
+
+# Usage
+[Back to top](#table-of-contents)
+
+1. In the folder where you cloned the files, after you installed requirements run: `jupyter notebook .`
+2. In the jupyter explorer open the file `MLB Hitters performance against salary.ipynb`
+
+> Feel yourself free to modify the variables used or to transform the data in different ways. Explore it on your own, test what works and what doesn't, that's how you will learn.
 
 # Some definitions before starting
 [Back to the top](#table-of-contents)
@@ -116,30 +143,7 @@ The same was downloaded from kaggle and provided with this repo for accesibility
 
 > This dataset was taken from the StatLib library which is maintained at Carnegie Mellon University. This is part of the data that was used in the 1988 ASA Graphics Section Poster Session. The salary data were originally from Sports Illustrated, April 20, 1987. The 1986 and career statistics were obtained from The 1987 Baseball Encyclopedia Update published by Collier Books, Macmillan Publishing Company, New York.
 
-# Installation
-[Back to top](#table-of-contents)
-
-> I'm asumming you already have installed python and pip. If not check this [tutorial](https://pip.pypa.io/en/stable/installation/)
-
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. The following command will install the packages according to the configuration file requirements.txt: `pip install -r requirements.txt`
-
-## Technologies used
-
-- `jupyter`
-- `matplotlib`
-- `numpy`
-- `pandas`
-- `pandas-profilling`
-- `seaborn`
-- `scikit-learn`
-
-# Usage
-[Back to top](#table-of-contents)
-
-1. In the folder where you cloned the files, after you installed requirements run: `jupyter notebook .`
-2. In the jupyter explorer open the file `MLB Hitters performance against salary.ipynb`
-
-> Feel yourself free to modify the variables used or to transform the data in different ways. Explore it on your own, test what works and what doesn't, that's how you will learn.
-
 # Conclusion
+![Not in a reliable way](https://user-images.githubusercontent.com/90852678/170711536-cfcd5fc4-6562-4e9b-9e84-31c4963ce1a3.gif)
+
+One single predictor is not enough as I showed in the notebook (explaining only as much as 30% of variation in data) so is obvious that a multiple linear regression is necessary and that maybe Career Runs will be an important predictor.  
